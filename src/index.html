@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Free Web Design & Development Webinar</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__container">
+            <nav class="header__nav">
+                <a class="header__logo link" href="/">
+                    <svg class="header__icon" width="37" height="37">
+                        <use href="../images/icons.svg#icon-book"></use>
+                    </svg>
+                    WebMastery
+                </a>
+                <ul class="header__menu">
+                    <li><a class="link" href="#course">Course</a></li>
+                    <li><a class="link" href="#pricing">Pricing</a></li>
+                    <li><a class="link" href="#timeline">Timeline</a></li>
+                    <li><a class="link" href="#faq">FAQ</a></li>
+                    <li><a class="link" href="#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__burger menu-btn-open" type="button">
+                <svg width="24" height="24">
+                    <use href="../images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu">
+                <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                    <svg width="24" height="24">
+                        <use href="../images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <a class="mobile-menu__logo link" href="/">
+                    <svg class="mobile-menu__icon" width="37" height="37">
+                        <use href="../images/icons.svg#icon-book"></use>
+                    </svg>
+                    WebMastery
+                </a>
+                <ul class="mobile-menu__list">
+                    <li>
+                        <a class="mobile-menu__link" href="#course">
+                            Course
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__link" href="#pricing">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__link" href="#timeline">Timeline</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__link" href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__link" href="#testimonials">
+                            Testimonials
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-section__container">
+            <div class="hero-section__text-container">
+                <h1 class="hero-section__title">Join Our <span class="accent">Free</span><br/>
+                    Web Design & Development <span class="accent">Webinar</span></h1>
+                <p class="hero-section__text">Learn essential skills and start your journey into tech — no experience needed.</p>
+                <div class="hero-section__timer timer" id="timer">
+                    <div class="timer__container">
+                        <p class="timer__number" id="hours">00</p>
+                        <p class="timer__text">hours</p>
+                    </div>
+                    <div class="timer__container">
+                        <p class="timer__number" id="minutes">00</p>
+                        <p class="timer__text">minutes</p>
+                    </div>
+                    <div class="timer__container">
+                        <p class="timer__number" id="seconds">00</p>
+                        <p class="timer__text">seconds</p>
+                    </div>
+                </div>
+                <button class="hero-section__button button anchor">Reserve</button>
+            </div>
+            <div class="hero-section__img-container">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="course-details-section section" id="course">
+    <div class="container">
+        <h2 class="course-details__title section__title">What You'll <span class="accent">Learn</span></h2>
+        <ol>
+            <li>Intro & Tools Setup</li>
+            <li>Design Principles</li>
+            <li>HTML/CSS/JS Basics</li>
+            <li>Build Your First Project</li>
+            <li>Bonus Tips & Portfolio Guidance</li>
+        </ol>
+    </div>
+</section>
+<section class="pricing-section section" id="pricing">
+    <div class="container">
+        <h2 class="section__title">Continue Learning with Our <span class="accent"> Full Course</span></h2>
+        <div class="packages">
+            <article class="package">
+                <h3>Starter</h3>
+                <p>$49 – 2-week access</p>
+            </article>
+            <article class="package">
+                <h3>Pro</h3>
+                <p>$99 – 1-month access + personal feedback</p>
+            </article>
+            <article class="package">
+                <h3>Ultimate</h3>
+                <p>$199 – 3-month access + portfolio review + certificate</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section section" id="faq">
+    <div class="container">
+        <h2 class="section__title"><span class="accent">FAQ</span></h2>
+        <details>
+            <summary>Is it really free?</summary>
+            <p>Yes! The first class is 100% free.</p>
+        </details>
+        <details>
+            <summary>Do I need prior experience?</summary>
+            <p>No, beginners are welcome!</p>
+        </details>
+    </div>
+</section>
+
+<section class="testimonials-section section" id="testimonials">
+    <div class="container">
+        <h2 class="section__title">What Our <span class="accent">Students Say</span></h2>
+        <blockquote>
+            "I created my first website within a week — this webinar was a game changer!" — Alex R.
+        </blockquote>
+        <blockquote>
+            "Very hands-on and clear. Loved the structure and feedback." — Maya L.
+        </blockquote>
+    </div>
+</section>
+<section class="reserve-section section" id="reserve">
+    <div class="container">
+        <h2 class="section__title">Reserve Your Free Spot <span class="accent">now</span>!</h2>
+        <form action="thank-you.html" method="post" class="reserve__form" id="signup">
+            <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="contact-name"
+                >Ім’я</label
+                >
+                <input
+                        class="input__control"
+                        id="contact-name"
+                        type="text"
+                        name="contact-name"
+                        placeholder="Your Name"
+                        required
+                />
+            </div>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Get Free Access</button>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <a href="privacy-policy.html">Privacy Policy</a> | <a href="cookies.html">Cookies Policy</a> | <a
+        href="sitemap.xml">Sitemap</a>
+</footer>
+</body>
+</html>
