@@ -11,8 +11,8 @@
     <div class="container">
         <div class="header__container">
             <nav class="header__nav">
-                <a class="header__logo link" href="/">
-                    <svg class="header__icon" width="37" height="37">
+                <a class="header__logo logo link" href="/">
+                    <svg class="logo__icon" width="37" height="37">
                         <use href="../images/icons.svg#icon-book"></use>
                     </svg>
                     WebMastery
@@ -78,7 +78,8 @@
             <div class="hero-section__text-container">
                 <h1 class="hero-section__title">Join Our <span class="accent">Free</span><br/>
                     Web Design & Development <span class="accent">Webinar</span></h1>
-                <p class="hero-section__text">Learn essential skills and start your journey into tech — no experience needed.</p>
+                <p class="hero-section__text">Learn essential skills and start your journey into tech — no experience
+                    needed.</p>
                 <div class="hero-section__timer timer" id="timer">
                     <div class="timer__container">
                         <p class="timer__number" id="hours">00</p>
@@ -160,28 +161,74 @@
 <section class="reserve-section section" id="reserve">
     <div class="container">
         <h2 class="section__title">Reserve Your Free Spot <span class="accent">now</span>!</h2>
-        <form action="thank-you.html" method="post" class="reserve__form" id="signup">
-            <div class="contact-section__form-field input">
-                <label class="input__label visually-hidden" for="contact-name"
-                >Ім’я</label
-                >
-                <input
-                        class="input__control"
-                        id="contact-name"
-                        type="text"
-                        name="contact-name"
-                        placeholder="Your Name"
-                        required
-                />
-            </div>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <button type="submit">Get Free Access</button>
-        </form>
+        <div class="reserve-section__form">
+            <p class="reserve-section__text">Fill out the form so we can contact you!</p>
+            <form action="thank-you.html" method="post" id="reserve-form">
+                <div class="reserve-section__form-field input">
+                    <label class="input__label visually-hidden" for="contact-name"
+                    >Name</label
+                    >
+                    <input
+                            class="input__control"
+                            id="contact-name"
+                            type="text"
+                            name="contact-name"
+                            placeholder="Your Name"
+                            required
+                    />
+                </div>
+                <div class="reserve-section__form-field input">
+                    <label class="input__label visually-hidden" for="contact-email"
+                    >Email</label
+                    >
+                    <input
+                            class="input__control"
+                            id="contact-email"
+                            name="contact-email"
+                            type="email"
+                            placeholder="Your Email"
+                            required
+                    />
+                </div>
+                <button class="reserve-section__button button" type="submit">
+                    Get Free Access
+                </button>
+                <p class="form-terms"
+                >By clicking the button I agree to
+                    <a class="form-terms__link" href="privacy-policy.html"> the privacy policy</a>
+                </p>
+            </form>
+        </div>
     </div>
 </section>
 <footer class="footer">
-    <a href="privacy-policy.html">Privacy Policy</a> | <a href="cookies.html">Cookies Policy</a> | <a
-        href="sitemap.xml">Sitemap</a>
+    <div class="container">
+        <div class="footer__container">
+            <nav class="footer__nav">
+                    <a class="footer__logo logo link" href="/">
+                        <svg class="logo__icon" width="37" height="37">
+                            <use href="../images/icons.svg#icon-book"></use>
+                        </svg>
+                        WebMastery
+                    </a>
+                <ul class="footer__menu">
+                    <li><a class="link" href="#course">Course</a></li>
+                    <li><a class="link" href="#pricing">Pricing</a></li>
+                    <li><a class="link" href="#timeline">Timeline</a></li>
+                    <li><a class="link" href="#faq">FAQ</a></li>
+                    <li><a class="link" href="#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+            <address class="footer__address">
+                <div class="footer__address-info">
+                    <a class="footer__address-link" href="privacy-policy.html" target="_blank"
+                    >The privacy policy</a
+                    >
+                    <p class="footer__address-copyright">© 2025 WebMastery Inc.</p>
+                </div>
+            </address>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

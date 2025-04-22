@@ -4,7 +4,9 @@
 @import './base';
 
 @import "components/buttons";
+@import "components/input";
 @import "components/link";
+@import "components/logo";
 @import "components/timer";
 
 @import "layouts/container";
@@ -12,4 +14,5 @@
 @import "layouts/header";
 @import "layouts/hero-section";
 @import "layouts/mobile-menu";
+@import "layouts/reserve-section";
 @import "layouts/section";

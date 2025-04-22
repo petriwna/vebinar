@@ -23,23 +23,6 @@
     gap: 40px;
   }
 
-  &__logo {
-    gap: 5px;
-    align-items: center;
-    display: flex;
-    font-weight: 800;
-    font-size: 30px;
-    color: var(--color-secondary);
-
-    &:hover {
-      color: var(--color-secondary);
-    }
-  }
-
-  &__icon {
-    fill: var(--color-secondary);
-  }
-
   &__menu {
     display: none;
 
