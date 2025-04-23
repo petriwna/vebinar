@@ -176,7 +176,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: resolveSrc('public/images'), to: 'images' },
-                // { from: resolveSrc('public/favicon'), to: 'favicon' },
+                { from: resolveSrc('public/favicon'), to: 'favicon' },
                 // { from: resolveSrc('public/robots.txt'), to: 'robots.txt' },
                 // { from: resolveSrc('public/sitemap.xml'), to: 'sitemap.xml' },
             ],

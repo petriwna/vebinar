@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 124px 0;
+  padding-top: 124px;
   background-color: var(--secondary-bg);
 
   &__container {
@@ -8,12 +8,13 @@
   }
 
   &__text-container {
-   width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-bottom: 124px;
 
-    @media screen and (min-width: $bp-tablet){
+    @media screen and (min-width: $bp-tablet) {
       width: 50%;
     }
   }
@@ -24,7 +25,7 @@
     line-height: 136%;
     color: var(--color-text-secondary);
 
-    @media screen and (min-width: $bp-tablet){
+    @media screen and (min-width: $bp-tablet) {
       font-size: 55px;
     }
   }
@@ -43,12 +44,35 @@
   &__img-container {
     display: none;
 
-    @media screen and (min-width: $bp-tablet){
-      position: absolute;
+    @media screen and (min-width: $bp-tablet) {
+      position: relative;
       display: block;
       width: 50%;
-      right: 0;
-      background-image: url("../../public/images/header-pic.png");
     }
+  }
+
+  &__image {
+    z-index: 0;
+    width: 80%;
+    height: 100%;
+    background-image: url('../../public/images/header-pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+
+  &__decorate {
+    width: 357px;
+    height: 358px;
+    background-image: url('../../public/images/decorate-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

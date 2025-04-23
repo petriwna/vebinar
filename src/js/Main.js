@@ -1,3 +1,5 @@
+import Swiper from "swiper";
+
 export class Main {
     constructor() {
         this.btnReserve = document.querySelector(".anchor");
@@ -8,6 +10,7 @@ export class Main {
         this.menuBtnClose = document.querySelector('.menu-btn-close');
 
         this.addEventListeners();
+        this.initSwiper();
     }
 
     addEventListeners() {
@@ -36,5 +39,26 @@ export class Main {
 
     disableScroll() {
         document.body.classList.toggle('is-scroll-disable');
+    }
+
+    initSwiper() {
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1280: {
+                    slidesPerView: 3,
+                },
+            },
+            pagination: {
+                el: '.pagination',
+                bulletClass: 'pagination__button',
+                bulletActiveClass: 'pagination__button--active',
+            },
+        });
     }
 }

@@ -13,7 +13,8 @@
   "dependencies": {
     "cross-env": "7.0.3",
     "del": "6.1.1",
-    "sass": "1.69.5"
+    "sass": "1.69.5",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@babel/cli": "7.24.1",

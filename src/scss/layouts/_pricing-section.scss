@@ -1,0 +1,16 @@
+.pricing-section {
+  &__slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  &__packages {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+}

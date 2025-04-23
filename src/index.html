@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="WebMaster"/>
+    <link rel="manifest" href="/favicon/site.webmanifest"/>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>Free Web Design & Development Webinar</title>
 </head>
 <body>
@@ -97,53 +107,70 @@
                 <button class="hero-section__button button anchor">Reserve</button>
             </div>
             <div class="hero-section__img-container">
+                <div class="hero-section__decorate"></div>
+                <div class="hero-section__image"></div>
             </div>
         </div>
     </div>
 </section>
-<section class="course-details-section section" id="course">
-    <div class="container">
+<div class="container background-container">
+    <section class="course-details-section section" id="course">
         <h2 class="course-details__title section__title">What You'll <span class="accent">Learn</span></h2>
-        <ol>
-            <li>Intro & Tools Setup</li>
-            <li>Design Principles</li>
-            <li>HTML/CSS/JS Basics</li>
-            <li>Build Your First Project</li>
-            <li>Bonus Tips & Portfolio Guidance</li>
-        </ol>
-    </div>
-</section>
-<section class="pricing-section section" id="pricing">
-    <div class="container">
+        <ul class="course-details__details details">
+            <li class="details__item">Intro & Tools Setup</li>
+            <li class="details__item">Design Principles</li>
+            <li class="details__item">HTML/CSS/JS Basics</li>
+            <li class="details__item">Build Your First Project</li>
+            <li class="details__item">Bonus Tips & Portfolio Guidance</li>
+        </ul>
+    </section>
+    <section class="pricing-section section" id="pricing">
         <h2 class="section__title">Continue Learning with Our <span class="accent"> Full Course</span></h2>
-        <div class="packages">
-            <article class="package">
-                <h3>Starter</h3>
-                <p>$49 – 2-week access</p>
-            </article>
-            <article class="package">
-                <h3>Pro</h3>
-                <p>$99 – 1-month access + personal feedback</p>
-            </article>
-            <article class="package">
-                <h3>Ultimate</h3>
-                <p>$199 – 3-month access + portfolio review + certificate</p>
-            </article>
+        <div class="pricing-section__slider">
+            <div class="pricing-section__packages swiper-container">
+                <ul class="pricing-section__list swiper-wrapper">
+                    <li class="swiper-slide">
+                        <article class="pricing-section__package package">
+                            <h3 class="package__title">Starter</h3>
+                            <p class="package__price">$49 – 2-week access</p>
+                        </article>
+                    </li>
+                    <li class="swiper-slide">
+                        <article class="pricing-section__package package">
+                            <h3 class="package__title">Pro</h3>
+                            <p class="package__price">$99 – 1-month access + personal feedback</p>
+                        </article>
+                    </li>
+                    <li class="swiper-slide">
+                        <article class="pricing-section__package package">
+                            <h3 class="package__title">Ultimate</h3>
+                            <p class="package__price">$199 – 3-month access + portfolio review + certificate</p>
+                        </article>
+                    </li>
+                </ul>
+                <div class="pagination">
+                    <span class="pagination__button"></span>
+                    <span class="pagination__button"></span>
+                    <span class="pagination__button"></span>
+                    <span class="pagination__button"></span>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
+</div>
 <section class="faq-section section" id="faq">
     <div class="container">
-        <h2 class="section__title"><span class="accent">FAQ</span></h2>
-        <details>
-            <summary>Is it really free?</summary>
-            <p>Yes! The first class is 100% free.</p>
-        </details>
-        <details>
-            <summary>Do I need prior experience?</summary>
-            <p>No, beginners are welcome!</p>
-        </details>
+        <h2 class="faq-section__title section__title"><span class="accent">FAQ</span></h2>
+        <div class="faq-section__container">
+            <details class="faq-section__questions-container questions-container">
+                <summary class="questions-container__question">Is it really free?</summary>
+                <p class="questions-container__answer">Yes! The first class is 100% free.</p>
+            </details>
+            <details class="faq-section__questions-container questions-container">
+                <summary class="questions-container__question">Do I need prior experience?</summary>
+                <p class="questions-container__answer">No, beginners are welcome!</p>
+            </details>
+        </div>
     </div>
 </section>
 
@@ -160,44 +187,46 @@
 </section>
 <section class="reserve-section section" id="reserve">
     <div class="container">
-        <h2 class="section__title">Reserve Your Free Spot <span class="accent">now</span>!</h2>
-        <div class="reserve-section__form">
-            <p class="reserve-section__text">Fill out the form so we can contact you!</p>
-            <form action="thank-you.html" method="post" id="reserve-form">
-                <div class="reserve-section__form-field input">
-                    <label class="input__label visually-hidden" for="contact-name"
-                    >Name</label
-                    >
-                    <input
-                            class="input__control"
-                            id="contact-name"
-                            type="text"
-                            name="contact-name"
-                            placeholder="Your Name"
-                            required
-                    />
-                </div>
-                <div class="reserve-section__form-field input">
-                    <label class="input__label visually-hidden" for="contact-email"
-                    >Email</label
-                    >
-                    <input
-                            class="input__control"
-                            id="contact-email"
-                            name="contact-email"
-                            type="email"
-                            placeholder="Your Email"
-                            required
-                    />
-                </div>
-                <button class="reserve-section__button button" type="submit">
-                    Get Free Access
-                </button>
-                <p class="reserve-section__form-terms"
-                >By clicking the button I agree to
-                    <a class="reserve-section__link" href="privacy-policy.html"> the privacy policy</a>
-                </p>
-            </form>
+        <div class="reserve-section__container">
+            <h2 class="section__title">Reserve Your Free Spot <span class="accent">now</span>!</h2>
+            <div class="reserve-section__form">
+                <p class="reserve-section__text">Fill out the form so we can contact you!</p>
+                <form action="thank-you.html" method="post" id="reserve-form">
+                    <div class="reserve-section__form-field input">
+                        <label class="input__label visually-hidden" for="contact-name"
+                        >Name</label
+                        >
+                        <input
+                                class="input__control"
+                                id="contact-name"
+                                type="text"
+                                name="contact-name"
+                                placeholder="Your Name"
+                                required
+                        />
+                    </div>
+                    <div class="reserve-section__form-field input">
+                        <label class="input__label visually-hidden" for="contact-email"
+                        >Email</label
+                        >
+                        <input
+                                class="input__control"
+                                id="contact-email"
+                                name="contact-email"
+                                type="email"
+                                placeholder="Your Email"
+                                required
+                        />
+                    </div>
+                    <button class="reserve-section__button button" type="submit">
+                        Get Free Access
+                    </button>
+                    <p class="reserve-section__form-terms"
+                    >By clicking the button I agree to
+                        <a class="reserve-section__link" href="privacy-policy.html"> the privacy policy</a>
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -205,12 +234,12 @@
     <div class="container">
         <div class="footer__container">
             <nav class="footer__nav">
-                    <a class="footer__logo logo link" href="/">
-                        <svg class="logo__icon" width="37" height="37">
-                            <use href="../images/icons.svg#icon-book"></use>
-                        </svg>
-                        WebMastery
-                    </a>
+                <a class="footer__logo logo link" href="/">
+                    <svg class="logo__icon" width="37" height="37">
+                        <use href="../images/icons.svg#icon-book"></use>
+                    </svg>
+                    WebMastery
+                </a>
                 <ul class="footer__menu">
                     <li><a class="link" href="#course">Course</a></li>
                     <li><a class="link" href="#pricing">Pricing</a></li>
@@ -230,5 +259,6 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>
