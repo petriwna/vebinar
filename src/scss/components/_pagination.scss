@@ -4,6 +4,10 @@
   justify-content: center;
   gap: 24px;
 
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+
   &__button {
     width: 12px;
     height: 12px;
@@ -12,7 +16,7 @@
     border-radius: 50%;
 
     &--active {
-      background-color: var(--color-secondary);
+      background-color: var(--color-accent);
     }
   }
 }

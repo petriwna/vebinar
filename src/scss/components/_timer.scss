@@ -1,7 +1,11 @@
 .timer {
   display: flex;
-  gap: 40px;
-  color: var(--color-text);
+  gap: 20px;
+  color: var(--color-text-secondary);
+
+  @media screen and (min-width: $bp-tablet){
+    font-size: 40px;
+  }
 
   &__container {
     display: flex;
@@ -14,6 +18,10 @@
     font-size: 40px;
 
     @media screen and (min-width: $bp-tablet){
+      font-size: 40px;
+    }
+
+    @media screen and (min-width: $bp-desktop){
       font-size: 70px;
     }
   }
@@ -22,9 +30,13 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 28px;
 
     @media screen and (min-width: $bp-tablet){
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: $bp-desktop){
       font-size: 28px;
     }
   }
