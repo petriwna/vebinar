@@ -28,9 +28,8 @@
                     WebMastery
                 </a>
                 <ul class="header__menu">
-                    <li><a class="link" href="#course">Course</a></li>
+                    <li><a class="link" href="#webinar">Webinar</a></li>
                     <li><a class="link" href="#pricing">Pricing</a></li>
-                    <li><a class="link" href="#timeline">Timeline</a></li>
                     <li><a class="link" href="#faq">FAQ</a></li>
                     <li><a class="link" href="#testimonials">Testimonials</a></li>
                 </ul>
@@ -55,8 +54,8 @@
                 </a>
                 <ul class="mobile-menu__list">
                     <li>
-                        <a class="mobile-menu__link" href="#course">
-                            Course
+                        <a class="mobile-menu__link" href="#webinar">
+                            Webinar
                         </a>
                     </li>
                     <li>
@@ -114,7 +113,7 @@
     </div>
 </section>
 <div class="container background-container">
-    <section class="course-details-section section" id="course">
+    <section class="course-details-section section" id="webinar">
         <h2 class="course-details-section__title section__title">What You'll <span class="accent">Learn</span></h2>
         <ul class="course-details-section__details details">
             <li class="details__item details__item--first">
@@ -158,7 +157,8 @@
                     <p class="details__number">5</p>
                     <div class="details__step">
                         <h3 class="details__title">Bonus Tips & Portfolio Guidance</h3>
-                        <p class="details__info">Learn what to include in your portfolio and how to present your skills.</p>
+                        <p class="details__info">Learn what to include in your portfolio and how to present your
+                            skills.</p>
                     </div>
                 </div>
             </li>
@@ -172,19 +172,47 @@
                     <li class="swiper-slide">
                         <article class="pricing-section__package package">
                             <h3 class="package__title">Starter</h3>
-                            <p class="package__price">$49 – 2-week access</p>
+                            <p class="package__price"><span class="package__price--item">$49</span>
+                                / 2-week
+                            </p>
+                            <hr class="package__divider"/>
+                            <ul>
+                                <li>Access to all lessons for 14 days</li>
+                                <li>Downloadable materials</li>
+                                <li>Email support</li>
+                            </ul>
                         </article>
                     </li>
                     <li class="swiper-slide">
-                        <article class="pricing-section__package package">
+                        <article class="pricing-section__package package package--popular">
                             <h3 class="package__title">Pro</h3>
-                            <p class="package__price">$99 – 1-month access + personal feedback</p>
+                            <div class="package__popular-container">
+                                <p>Most Popular</p>
+                            </div>
+                            <p class="package__price"><span class="package__price--item">$99</span>
+                                / 1-month
+                            </p>
+                            <hr class="package__divider"/>
+                            <ul>
+                                <li class="package__plus">Everything in Starter</li>
+                                <li>1:1 feedback on one project</li>
+                                <li>Access to bonus content</li>
+                            </ul>
                         </article>
                     </li>
                     <li class="swiper-slide">
                         <article class="pricing-section__package package">
                             <h3 class="package__title">Ultimate</h3>
-                            <p class="package__price">$199 – 3-month access + portfolio review + certificate</p>
+                            <p class="package__price"><span class="package__price--item">$199</span>
+                                / 3-month
+                            </p>
+                            <hr class="package__divider" />
+                            <ul>
+                                <li class="package__plus">Everything in Pro</li>
+                                <li>Portfolio review by experts</li>
+                                <li>Certificate of completion</li>
+                                <li>Priority support</li>
+                            </ul>
                         </article>
                     </li>
                 </ul>
@@ -198,31 +226,71 @@
         </div>
     </section>
 </div>
-<section class="faq-section section" id="faq">
-    <div class="container">
+<div class="container second-bg-container">
+    <section class="faq-section section" id="faq">
         <h2 class="faq-section__title section__title"><span class="accent">FAQ</span></h2>
         <div class="faq-section__container">
-            <details class="faq-section__questions-container questions-container">
-                <summary class="questions-container__question">Is it really free?</summary>
-                <p class="questions-container__answer">Yes! The first class is 100% free.</p>
-            </details>
             <details class="faq-section__questions-container questions-container">
                 <summary class="questions-container__question">Do I need prior experience?</summary>
                 <p class="questions-container__answer">No, beginners are welcome!</p>
             </details>
+            <details class="faq-section__questions-container questions-container">
+                <summary class="questions-container__question">Will I need any software?</summary>
+                <p class="questions-container__answer">We’ll guide you through free tools that are easy to set up and
+                    use.</p>
+            </details>
+            <details class="faq-section__questions-container questions-container">
+                <summary class="questions-container__question">Can I watch the recording later?</summary>
+                <p class="questions-container__answer">Yes, a replay will be available to all who register.</p>
+            </details>
+            <details class="faq-section__questions-container questions-container">
+                <summary class="questions-container__question">How long is the webinar?</summary>
+                <p class="questions-container__answer">Approximately 90 minutes, including a live Q&A session.</p>
+            </details>
         </div>
-    </div>
-</section>
-
+    </section>
+</div>
 <section class="testimonials-section section" id="testimonials">
     <div class="container">
-        <h2 class="section__title">What Our <span class="accent">Students Say</span></h2>
-        <blockquote>
-            "I created my first website within a week — this webinar was a game changer!" — Alex R.
-        </blockquote>
-        <blockquote>
-            "Very hands-on and clear. Loved the structure and feedback." — Maya L.
-        </blockquote>
+        <h2 class="testimonials-section__title section__title">What Our <span class="accent">Students Say</span></h2>
+        <div class="testimonials-section__container">
+            <div class="testimonials-section__item testimonials-section__item--first testimonial">
+                <div class="testimonial__decor"></div>
+                <div class="testimonial__text">
+                    <p class="testimonial__author">Alex R.</p>
+                    <blockquote>
+                        "I created my first website within a week — this webinar was a game changer!"
+                    </blockquote>
+                </div>
+            </div>
+            <div class="testimonials-section__item testimonials-section__item--second testimonial">
+                <div class="testimonial__decor"></div>
+                <div class="testimonial__text">
+                    <p class="testimonial__author">Priya S.</p>
+                    <blockquote>
+                        "Super friendly pace and helpful community."
+                    </blockquote>
+                </div>
+            </div>
+            <div class="testimonials-section__item testimonials-section__item--third testimonial">
+                <div class="testimonial__decor"></div>
+                <div class="testimonial__text">
+                    <p class="testimonial__author">Daniel T.</p>
+                    <blockquote>
+                        "I didn’t expect to learn so much in just one session. Highly recommend!"
+                    </blockquote>
+                </div>
+            </div>
+            <div class="testimonials-section__item testimonials-section__item--fourth testimonial">
+                <div class="testimonial__decor"></div>
+                <div class="testimonial__text">
+                    <p class="testimonial__author">Emily W.</p>
+                    <blockquote>
+                        "It opened the door to a new career path for me. So grateful!"
+                    </blockquote>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <section class="reserve-section section" id="reserve">
@@ -283,7 +351,6 @@
                 <ul class="footer__menu">
                     <li><a class="link" href="#course">Course</a></li>
                     <li><a class="link" href="#pricing">Pricing</a></li>
-                    <li><a class="link" href="#timeline">Timeline</a></li>
                     <li><a class="link" href="#faq">FAQ</a></li>
                     <li><a class="link" href="#testimonials">Testimonials</a></li>
                 </ul>
