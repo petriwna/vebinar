@@ -8,11 +8,13 @@
     "build": "cross-env NODE_ENV=production webpack",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:analyze": "cross-env NODE_ENV=production webpack --analyze",
-    "clear": "yarn cmd clean"
+    "clear": "yarn cmd clean",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "cross-env": "7.0.3",
     "del": "6.1.1",
+    "gh-pages": "^6.3.0",
     "sass": "1.69.5",
     "swiper": "^11.2.6"
   },
